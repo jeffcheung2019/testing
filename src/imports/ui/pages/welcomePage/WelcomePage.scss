@@ -1,0 +1,53 @@
+.div-welcomePage-container{
+  background-color: white;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  .div-sideNavIcon-container{
+    left: 15vh;
+    top: 10vw;
+    position: absolute;
+  }
+
+  .div-content-container{
+    top: 25vh;
+    left: 20vw;
+    position: relative;
+    .div-blackAlluvaIcon-container{
+      width: 0px;
+    }
+    .div-welcomePage-text{
+      margin-top: 10vh;
+      width: 40vw;
+      word-break: break-word;
+      font-family: 'proxima-nova';
+      line-height: normal;
+      font-size: 22px;
+    }
+
+
+    .svg-icon{
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .div-button-container{
+    margin-top: 3vh;
+    .button-signin{
+      background-color: #131E1E;
+      color: #FFFFFF;
+      padding: 5px 30px;
+      border-radius: 7px;
+    }
+    .button-registerNow{
+      background-color: #F93A2E;
+      color: #FFFFFF;
+      padding: 5px 30px;
+      border-radius: 7px;
+    }
+  }
+
+}

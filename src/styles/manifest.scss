@@ -1,0 +1,13 @@
+  @import "App.scss";
+  @import "styles/common.scss";
+  @import "imports/ui/Layout.scss";
+
+//components
+  //@import "../imports/components/";
+  @import "imports/ui/components/sideNav/SideNav.scss";
+
+//paegs
+  //@import "../imports/pages/.scss";
+  @import "imports/ui/pages/signinPage/SigninPage.scss";
+  @import "imports/ui/pages/signupPage/SignupPage.scss";
+  @import "imports/ui/pages/welcomePage/WelcomePage.scss";

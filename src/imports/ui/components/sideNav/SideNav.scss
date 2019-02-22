@@ -1,0 +1,77 @@
+.div-sideNavIcon-container{
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+.div-sideNav-container-m{
+  z-index: 999;
+  position: absolute;
+  background-color: #080E0E;
+  border-radius: 0px 10px 10px 0px;
+  width: 80%;
+  height: 90%;
+  .div-closeButtonIcon-container{
+    position: fixed;
+    left: 10%;
+    top: 10%;
+  }
+  .div-linkList-container{
+    left: 15%;
+    top: 15%;
+    position: absolute;
+
+    .div-link{
+      margin:20px;
+      color: #E5E5E5;
+    }
+    .div-link-Logout{
+      margin:20px;
+      color: #B3B3B3;
+    }
+  }
+}
+
+.mobile-sideNav-off{
+  display: none;
+}
+.mobile-sideNav-on{
+  display: block;
+}
+
+.div-sideNav-container{
+  display: none;
+
+  @media (min-width: 992px){
+    float:left;
+    display: table;
+    width:30vh;
+    height:100vh;
+    margin-right: auto;
+    background-color: #233030;
+    .div-whiteAlluvaIcon-container{
+      margin: 70px 30px;
+
+    }
+
+    .div-iconList-container{
+      .div-icon-container{
+        margin:30px;
+
+      }
+    }
+
+    .div-sideNav-splitter{
+      height: 1px;
+      width: 60%;
+      margin: 60px auto;
+      background: white;
+    }
+    .div-logout-link{
+      text-align: center;
+      color: white;
+      margin: 100px 20px;
+      font-weight: 500;
+    }
+  }
+}

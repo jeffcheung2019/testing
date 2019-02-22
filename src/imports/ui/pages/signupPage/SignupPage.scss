@@ -1,0 +1,35 @@
+.div-signupPage-container{
+  color: #FFFFFF;
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+  .h2-signup-text{
+
+  }
+  .form-signup{
+    margin-top: 30%;
+    .div-signup-field{
+      margin: auto 0px;
+
+      .label-signup{
+        color: #FFFFFF;
+      }
+      .input-signup{
+        border-bottom: solid white 1px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+
+  .div-signup-button{
+    margin: 20px 0px;
+    .button-signup{
+      background-color: #F9D92E;
+      color: #080E0E;
+      padding: 5px 30px;
+      border-radius: 9px;
+    }
+  }
+
+}
