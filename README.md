@@ -1,8 +1,8 @@
-Build the node js package first:
-npm install
-then run the command for starting the dev server:
-npm start
-This project is made with react on top of create react app
+Build the node js package first:<br/>
+npm install<br/>
+then run the command for starting the dev server:<br/>
+npm start<br/>
+This project is made with react on top of create react app<br/>
 
 ==============================================================
 
