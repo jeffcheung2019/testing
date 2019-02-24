@@ -1,3 +1,11 @@
+Build the node js package first:
+npm install
+then run the command for starting the dev server:
+npm start
+This project is made with react on top of create react app
+
+==============================================================
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
