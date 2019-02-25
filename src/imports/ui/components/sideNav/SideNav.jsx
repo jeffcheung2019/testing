@@ -7,7 +7,9 @@ import ProfileWithTextIcon from 'imports/ui/components/icons/ProfileWithTextIcon
 import CloseButtonIcon from 'imports/ui/components/icons/CloseButtonIcon';
 import SideNavIcon from 'imports/ui/components/icons/SideNavIcon';
 
-export default class SideNav extends React.Component {
+import { connect } from 'react-redux';
+
+class SideNav extends React.Component {
 
   constructor(props){
     super(props);
@@ -25,7 +27,8 @@ export default class SideNav extends React.Component {
   }
 
   mobileSideNavContent(){
-    let containerClassname = "div-sideNav-container-m " + ((this.state.mobileSideNavIsOpen) ? "mobile-sideNav-on" : "mobile-sideNav-off");
+    //let containerClassname = "div-sideNav-container-m " + ((this.state.mobileSideNavIsOpen) ? "mobile-sideNav-on" : "mobile-sideNav-off");
+    let containerClassname = "div-sideNav-container-m " + ((this.state.mobileSideNavIsOpen) ? "mobile-sideNav-normal-position" : "mobile-sideNav-left-overflow-position");
     let sideNavIconClassname = "div-sideNavIcon-container " + ((this.state.mobileSideNavIsOpen) ? "mobile-sideNav-off" : "mobile-sideNav-on");
     return (
         <>
@@ -70,3 +73,11 @@ export default class SideNav extends React.Component {
   }
 
 }
+
+const mapStateToProps = (state) => {
+    return {
+        windowSize: state.windowEventReducer.windowSize
+    };
+};
+
+export default connect(mapStateToProps)(SideNav);

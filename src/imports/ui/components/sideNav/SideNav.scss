@@ -1,4 +1,5 @@
 .div-sideNavIcon-container{
+  z-index: 999;
   position: absolute;
   left: 10%;
   top: 10%;
@@ -11,14 +12,15 @@
   border-radius: 0px 10px 10px 0px;
   width: 80%;
   height: 90%;
+  transition: all .75s ease;
   .div-closeButtonIcon-container{
-    position: fixed;
-    left: 10%;
-    top: 10%;
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
   }
   .div-linkList-container{
-    left: 15%;
-    top: 15%;
+    left: 15vw;
+    top: 15vh;
     position: absolute;
 
     .div-link{
@@ -37,6 +39,14 @@
 }
 .mobile-sideNav-on{
   display: block;
+}
+
+.mobile-sideNav-left-overflow-position{
+  left:-100vw;
+
+}
+.mobile-sideNav-normal-position{
+  left: 0px;
 }
 
 .div-sideNav-container{

@@ -1,7 +1,10 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-export default class SignupPage extends React.Component {
+
+import { connect } from 'react-redux';
+
+class SignupPage extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -63,5 +66,13 @@ export default class SignupPage extends React.Component {
 
       </div>);
   }
-
 }
+
+
+const mapStateToProps = (state) => {
+    return {
+        windowSize: state.windowEventReducer.windowSize
+    };
+};
+
+export default connect(mapStateToProps)(SignupPage);
